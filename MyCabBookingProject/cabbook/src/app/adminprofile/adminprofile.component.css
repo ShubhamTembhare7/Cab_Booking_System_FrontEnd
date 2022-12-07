@@ -1,0 +1,15 @@
+.border{
+    min-width:100px;
+    background-color: aliceblue;
+   
+  }
+  
+  h2{
+    font-weight: bold;
+    color: rgb(235, 71, 6);
+  }
+  h4{
+    font-weight: bold;
+    color: rgb(20, 151, 151);
+  }
+  

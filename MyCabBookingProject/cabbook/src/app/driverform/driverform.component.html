@@ -1,0 +1,133 @@
+<section class="bg-primary">
+    <div class="container ">
+      <div class="row d-flex justify-content-center align-items-center h-10">
+        <div class="col">
+          <div class="card card-registration my-2">
+            <div class="row g-0">
+              <!-- <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-right-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>  -->
+              <div class="col-xl-12">
+                <div class="card-body p-md-3 text-black">
+                  <h2 class="mb-4 text-uppercase">Driver's Registration form</h2>
+                  <form #prof="ngForm" (ngSubmit)="savedata()" >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1m">Driver Name</label>
+                        <input type="text" id="driverName"  name="driverName"  [(ngModel)]="driverinfo.driverName" class="form-control form-control-sm"   />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Contact Number</label>
+                        <input type="text" id="mobileNo" name="mobileNo" [(ngModel)]="driverinfo.mobileNo"  class="form-control form-control-sm"  />
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">DOB</label>
+                        <input class="form-control form-control-sm" id="driverDob" name="driverDob" [(ngModel)]="driverinfo.driverDob"  placeholder="MM/DD/YYY" type="date" value=""/>
+                        
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Aadhar Number</label>
+                        <input type="text" id="driverAdharNo" name="driverAdharNo"  [(ngModel)]="driverinfo.driverAdharNo" class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Address</label>
+                        <input type="text" id="driverAddress" name="driverAddress" [(ngModel)]="driverinfo.driverAddress" class="form-control form-control-sm"  />
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <!-- <label class="form-label" for="form3Example1n">Price</label>
+                        <mat-select  name="price" [(ngModel)]="driverinfo.price" class="form-control form-control-sm" >
+                        <mat-option *ngFor="let d for temp" [value]="d">{{d}}</mat-option>
+                        </mat-select> -->
+                        <mat-form-field style="width:100%;"  appearance="standard"> 
+                                    
+                          <mat-label>Price</mat-label>
+                          
+                             <mat-select  name="spring_rating" [(ngModel)]="driverinfo.price">
+                              <mat-option *ngFor="let d of temp" [value]="d">{{d}}</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+<!-- 
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1m1">Email Address</label>
+                        <input type="text" id="emailAddress" name="emailAddress" [(ngModel)]="driverinfo.driverAddress" class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                    </div> -->
+
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Licence Number</label>
+                        <input type="text" id="driverLicenceNo" name="driverLicenceNo" [(ngModel)]="driverinfo.driverLicenceNo" class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n1">Vehicle Name</label>
+                        <input type="text" id="vehicleName"  name="vehicleName" [(ngModel)]="driverinfo.vehicleName"  class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                  </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n1">Model Name</label>
+                        <input type="text" id="modelName"  name="modelName" [(ngModel)]="driverinfo.modelName"  class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Vehicle Number</label>
+                        <input type="text" id="driverVehicleNo" name="driverVehicleNo" [(ngModel)]="driverinfo.driverVehicleNo" class="form-control form-control-sm" />
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div class="row mt-5">
+                    <button *ngIf="!isexist" class="btn btn-success" type="submit" >Register</button>
+                    <button  *ngIf="isexist" class="btn btn-success" type="submit" >Update</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

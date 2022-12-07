@@ -1,0 +1,53 @@
+<html>
+    <nav class="navbar navbar-dark bg-primary" >
+
+        <h2>All Drivers</h2>
+      </nav>
+
+    
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Driver ID</th>
+            <th>Driver Name</th>
+            <th>Contact Number</th>
+            <th>DOB</th>
+            <th>Adhaar Number</th>
+            <th>Address</th>
+            <th>Licence Number</th>
+            <th>Vehicle Name</th>
+            <th>Model Name</th>
+            <th>Vehicle Number</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+   
+    <tbody>
+
+        <tr *ngFor="let t of driver">
+            <td>{{t.driverId}}</td>
+            <td>{{t.driverName}}</td>
+            <td>{{t.mobileNo}}</td>
+            <td>{{t.driverDob}}</td>
+            <td>{{t.driverAdharNo}}</td>
+            <td>{{t.driverAddress}}</td>
+            <td>{{t.driverLicenceNo}}</td>
+            <td>{{t.vehicleName}}</td>
+            <td>{{t.modelName}}</td>
+            <td>{{t.driverVehicleNo}}</td>
+            <td><button type="submit" class="btn btn-primary" (click)="Edit(t.driverId)">Update</button></td>
+            <td><button type="submit" class="btn btn-danger" (click)="Delete(t.driverId)">Delete</button></td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+
+</html>
+
+
+

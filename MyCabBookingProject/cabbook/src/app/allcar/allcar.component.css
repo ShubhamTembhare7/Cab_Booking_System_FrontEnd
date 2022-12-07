@@ -1,0 +1,42 @@
+.table{
+    background-color: aliceblue;
+  }
+  
+  input[type=text],
+  select {
+    width: 50%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid rgb(25, 20, 20);
+    border-radius: 2 px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  th {
+    font-family: Georgia;
+    text-align: center;
+    font-size: 12px;
+    background-color: #b9531d  ;
+    
+  }
+  
+  td{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 16px;
+  
+  
+  }
+  
+    h2 {
+      font-family: Georgia;
+      color: white;
+      padding-top: 00px;
+      padding-bottom: 00px;
+      padding-left: 550px;
+    }
+  
+    

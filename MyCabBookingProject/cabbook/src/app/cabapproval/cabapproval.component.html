@@ -1,0 +1,91 @@
+<!-- <mat-card>
+<div *ngFor="let t of driverapp">
+    <table>
+        <tr><b>Customer Id</b>&nbsp;
+            <td>{{t.registrationId.registrationId}}</td>
+            </tr>
+            <tr><b>Customer Name</b>&nbsp;
+            <td>{{t.registrationId.userName}}</td>
+        </tr>
+        <tr><b>Driver Id</b>&nbsp;
+            <td>{{t.driverId.driverId}}</td>
+        </tr>
+        <tr><b>Driver Name</b>&nbsp;
+            <td>{{t.driverId.driverName}}</td>
+        </tr>
+        <tr><b>Source</b>&nbsp;
+            <td>{{t.source}}</td>
+        </tr>
+        <tr><b>Destination</b>&nbsp;
+            <td>{{t.destination}}</td>
+        </tr>
+        <tr><b>DriverLicenceNo</b>&nbsp;
+            <td>{{t.driverId.driverLicenceNo}}</td>
+        </tr>
+        <tr><b>VehicleName</b>&nbsp;
+            <td>{{t.driverId.vehicleName}}</td>
+        </tr>
+        <tr><b>ModelName</b>&nbsp;
+            <td>{{t.driverId.modelName}}</td>
+        </tr>
+      <br>
+    </table>
+
+</div>
+
+</mat-card> -->
+
+<html>
+   
+
+    
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>UserName</th>
+            <th>Price</th>
+            <th>Driver ID</th>
+            <th>Driver Name</th>
+            <th>Contact Number</th>
+            <th>Vehicle Name</th>
+            <th>Model Name</th>
+            <th>Vehicle Number</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+   
+    <tbody>
+
+        <tr *ngFor="let t of driverapp">
+            <td>{{t.registrationId.registrationId}}</td>
+            <td>{{t.registrationId.userName}}</td>
+            <td>{{t.price}}</td>
+            <td>{{t.driverId.driverId}}</td>
+            <td>{{t.driverId.driverName}}</td>
+            <td>{{t.driverId.mobileNo}}</td>
+            <td>{{t.driverId.vehicleName}}</td>
+            <td>{{t.driverId.modelName}}</td>
+            <td>{{t.driverId.driverVehicleNo}}</td>
+            <td>{{t.source}}</td>
+            <td>{{t.destination}}</td>
+            
+            
+    <td><button type="submit" class="btn btn-success" (click)="Approve(t.bookingId)">Approve</button></td>
+            <td><button type="submit" class="btn btn-danger" (click)="Reject(t.bookingId)">Reject</button></td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+
+</html>
+
+
+
